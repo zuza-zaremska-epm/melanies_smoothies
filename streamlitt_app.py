@@ -33,9 +33,7 @@ if ingredients_list:
     my_insert_stmt = f"""
     INSERT INTO smoothies.public.orders(ingredients, name_on_order)
     VALUES ('{ingredients_string}', '{title}');"""
-            
-
-    st.write(my_insert_stmt)
+  
     time_to_insert = st.button("Submit Order")
 
     if time_to_insert:
